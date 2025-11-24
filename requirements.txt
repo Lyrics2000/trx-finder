@@ -1,8 +1,8 @@
 base58==2.1.1
-certifi==2025.11.12
+
 charset-normalizer==3.4.4
 ecdsa==0.19.1
-idna==3.11
+
 markdown-it-py==4.0.0
 mdurl==0.1.2
 pycryptodome==3.23.0
