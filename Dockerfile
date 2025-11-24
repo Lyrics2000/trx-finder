@@ -15,7 +15,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code
-COPY l.py .
+COPY trx.py .
 COPY docker-entrypoint.sh .
 
 # Make entrypoint executable
