@@ -1,0 +1,21 @@
+version: '3.8'
+
+networks:
+  app-network:
+    external: true
+services:
+  password-cracker:
+    build: .
+    container_name: password-cracker1
+    restart: unless-stopped
+    volumes:
+      - ./results:/password1/app/results
+      - ./logs:/password1/app/logs
+    networks:
+      - app-network
+    
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
